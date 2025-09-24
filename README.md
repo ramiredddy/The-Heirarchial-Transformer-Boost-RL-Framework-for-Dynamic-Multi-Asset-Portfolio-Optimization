@@ -1,6 +1,5 @@
 The Hierarchical Transformer-Boost RL Framework for Dynamic Multi-Asset Portfolio Optimization
 
-
 📌 Overview
 
 This project proposes a Hierarchical Transformer-Boost Reinforcement Learning (RL) Framework for Dynamic Multi-Asset Portfolio Optimization. It combines the power of transformer-based sequence modeling, boosting techniques, and hierarchical reinforcement learning to achieve adaptive, robust, and scalable portfolio allocation strategies.
