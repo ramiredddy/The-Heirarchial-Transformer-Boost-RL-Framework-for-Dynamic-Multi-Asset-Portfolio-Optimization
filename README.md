@@ -67,6 +67,20 @@ The model processes historical price data, technical indicators, and market micr
 
 The architecture consists of multiple attention heads that process temporal sequences, followed by gradient boosting for feature enhancement, and finally a PPO-based actor-critic network for action generation.
 
+## 🎯 Evaluation Metrics
+
+The framework performance is evaluated using the following key metrics:
+
+- **Sharpe Ratio**: Risk-adjusted returns measuring excess return per unit of volatility
+- **Maximum Drawdown**: Largest peak-to-trough decline during the investment period
+- **Cumulative Returns**: Total portfolio return over the evaluation period
+- **Win Rate**: Percentage of profitable trading periods
+- **Sortino Ratio**: Downside risk-adjusted return (penalizes only negative volatility)
+- **Information Ratio**: Active return relative to benchmark divided by tracking error
+- **Calmar Ratio**: Annual return divided by maximum drawdown
+
+All metrics are computed on out-of-sample test data to ensure robust evaluation.
+
 ## 🧪 Future Work
 - [ ] Integration with real-time trading APIs
 - [ ] Multi-objective optimization with Pareto frontiers
