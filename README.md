@@ -128,7 +128,33 @@ print(f"Optimal portfolio weights: {portfolio_weights}")
 4. Zhang, Z., et al. (2020). *Deep Reinforcement Learning for Trading*. Journal of Financial Data Science.
 
 ## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+We welcome contributions from the community! Here's how you can help:
+
+### How to Contribute
+
+1. **Fork the repository** and create your branch from `main`
+2. **Make your changes** with clear, descriptive commit messages
+3. **Add tests** if you're adding new functionality
+4. **Ensure the test suite passes** before submitting
+5. **Submit a Pull Request** with a comprehensive description of changes
+
+### Contribution Guidelines
+
+- Follow PEP 8 style guidelines for Python code
+- Add docstrings to all functions and classes
+- Update documentation for any changed functionality
+- For major changes, please open an issue first to discuss your proposal
+- Be respectful and constructive in all interactions
+
+### Areas for Contribution
+
+- Bug fixes and issue resolutions
+- Performance optimizations
+- Documentation improvements
+- New feature implementations
+- Test coverage expansion
+- Example notebooks and tutorials
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
