@@ -42,6 +42,31 @@ This framework combines three powerful approaches:
 
 The model processes historical price data, technical indicators, and market microstructure features through transformer layers, then uses PPO to optimize portfolio weights while maintaining transaction cost awareness.
 
+## 🏛️ Architecture Overview
+
+```
+[Market Data] --> [Feature Engineering] --> [Transformer Encoder]
+                                                     |
+                                                     v
+                                          [Attention Layers (x6)]
+                                                     |
+                                                     v
+                                          [XGBoost Feature Boost]
+                                                     |
+                                                     v
+                                             [PPO Actor-Critic]
+                                                     |
+                                    +----------------+----------------+
+                                    |                                 |
+                                [Actor]                           [Critic]
+                            (Policy Network)                (Value Network)
+                                    |
+                                    v
+                            [Portfolio Weights]
+```
+
+The architecture consists of multiple attention heads that process temporal sequences, followed by gradient boosting for feature enhancement, and finally a PPO-based actor-critic network for action generation.
+
 ## 🧪 Future Work
 - [ ] Integration with real-time trading APIs
 - [ ] Multi-objective optimization with Pareto frontiers
