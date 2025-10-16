@@ -81,6 +81,39 @@ The framework performance is evaluated using the following key metrics:
 
 All metrics are computed on out-of-sample test data to ensure robust evaluation.
 
+## 🚀 Usage Example
+
+Here's a quick example to get you started:
+
+```python
+import numpy as np
+from portfolio_optimizer import HierarchicalTransformerPPO
+
+# Initialize the model
+model = HierarchicalTransformerPPO(
+    n_assets=10,
+    learning_rate=3e-4,
+    transformer_layers=6,
+    attention_heads=8
+)
+
+# Load your market data
+market_data = np.load('market_data.npy')  # Shape: (timesteps, n_assets, features)
+
+# Train the model
+model.train(
+    data=market_data,
+    epochs=100,
+    batch_size=256
+)
+
+# Generate portfolio weights for new data
+new_data = np.load('test_data.npy')
+portfolio_weights = model.predict(new_data)
+
+print(f"Optimal portfolio weights: {portfolio_weights}")
+```
+
 ## 🧪 Future Work
 - [ ] Integration with real-time trading APIs
 - [ ] Multi-objective optimization with Pareto frontiers
