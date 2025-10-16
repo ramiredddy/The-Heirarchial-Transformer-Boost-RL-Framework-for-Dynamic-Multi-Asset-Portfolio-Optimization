@@ -32,6 +32,16 @@ attention_heads: 8
 hidden_dim: 512
 ```
 
+## 📊 Methodology
+
+This framework combines three powerful approaches:
+
+1. **Hierarchical Transformer Architecture**: Multi-head self-attention mechanisms capture complex temporal dependencies in financial time series data
+2. **Gradient Boosting Integration**: XGBoost enhances feature extraction and provides robust prediction signals
+3. **Proximal Policy Optimization (PPO)**: Stable reinforcement learning algorithm for continuous action spaces in portfolio allocation
+
+The model processes historical price data, technical indicators, and market microstructure features through transformer layers, then uses PPO to optimize portfolio weights while maintaining transaction cost awareness.
+
 ## 🧪 Future Work
 - [ ] Integration with real-time trading APIs
 - [ ] Multi-objective optimization with Pareto frontiers
